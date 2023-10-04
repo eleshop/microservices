@@ -15,6 +15,7 @@ namespace SecondProject.Controllers
             return new string[] { "value1", "value2" };
         }
 
+
         // GET api/<ClientController>/5
         [HttpGet("{id}")]
         public string Get(int id)
