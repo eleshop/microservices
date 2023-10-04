@@ -1,27 +1,27 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/Users/{any}",
+      "DownstreamPathTemplate": "/api/Admins",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7065
+          "Port": 7150
         }
       ],
-      "UpstreamPathTemplate": "/api-gateway/users/{any}",
+      "UpstreamPathTemplate": "/api-gateway/admins",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Patch" ]
     },
     {
-      "DownstreamPathTemplate": "/api/Users/{any}",
+      "DownstreamPathTemplate": "/api/Admins/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7065
+          "Port": 7150
         }
       ],
-      "UpstreamPathTemplate": "/api-gateway/users/{any}",
+      "UpstreamPathTemplate": "/api-gateway/admins/{id}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Patch" ]
     }
   ]
